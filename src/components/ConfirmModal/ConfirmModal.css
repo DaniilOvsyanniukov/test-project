@@ -1,0 +1,39 @@
+.modalConfirmBack{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+.modalConfirmBack.active{
+    transform: scale(1)
+}
+
+.modalConfirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  margin: 0 auto;
+  width: 600px;
+}
+.modalConfirmText{
+  display: block
+}
+
+.modalConfirmButtonList{
+  display: flex;
+}
+.modalConfirmButtonItem:not(:last-child){
+margin-right: 20px;
+}
